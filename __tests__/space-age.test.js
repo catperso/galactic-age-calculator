@@ -39,7 +39,7 @@ describe('SpaceAge', () => {
     expect(myAge.yearsLeft('Mars')).toEqual(25.53);
     expect(myAge.yearsLeft('Jupiter')).toEqual(4.05);
   });
-//   test('should return foreboding message to a user not yet at the average expectancy', () => {
-    
-//   });
+   test('should return foreboding message to a user not yet at the average expectancy', () => {
+    expect(myAge.foretelling('Jupiter')).toEqual('You have a mere 4.05 years left to live on Jupiter. Make the most of it!');
+   });
 });
