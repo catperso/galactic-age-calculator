@@ -21,5 +21,11 @@ export default class SpaceAge {
     if (fortune > 0) {
       return `You have a mere ${fortune} years left to live on ${planet}. Make the most of it!`
     }
+    if (fortune < 0) {
+      return `You're currently ${-fortune} years past the average lifetime on ${planet}. Go for the high score!`
+    }
+    if (fortune === 0) {
+      return `Most people on ${planet} are expected to die at your age. Defy expectations!`
+    }
   }
 }
