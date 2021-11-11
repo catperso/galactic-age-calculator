@@ -27,10 +27,10 @@ describe('SpaceAge', () => {
     expect(myAge.ages['Jupiter']).toEqual(2.61);
   });
   test('should correctly create a property with the max life expectancy on each planet', () => {
-    expect(myAge.expectancy['Earth'].toEqual(78.99));
-    expect(myAge.expectancy['Mercury'].toEqual(329.13));
-    expect(myAge.expectancy['Venus'].toEqual(127.40));
-    expect(myAge.expectancy['Mars'].toEqual(42.02));
-    expect(myAge.expectancy['Jupiter'].toEqual(6.66));
+    expect(myAge.expectancy['Earth']).toEqual(78.99);
+    expect(myAge.expectancy['Mercury']).toEqual(329.13);
+    expect(myAge.expectancy['Venus']).toEqual(127.40);
+    expect(myAge.expectancy['Mars']).toEqual(42.02);
+    expect(myAge.expectancy['Jupiter']).toEqual(6.66);
   })
 });

@@ -2,6 +2,7 @@ export default class SpaceAge {
   constructor(age) {
     this.ages = {};
     this.ages['Earth'] = age;
+    this.expectancy = { Earth: 78.99, Mercury: 329.13, Venus: 127.40, Mars: 42.02, Jupiter: 6.66 };
   }
 
   ageConverter() {
