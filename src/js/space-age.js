@@ -15,4 +15,11 @@ export default class SpaceAge {
   yearsLeft(planet) {
     return parseFloat((this.expectancy[planet] - this.ages[planet]).toFixed(2));
   }
+
+  foretelling(planet) {
+    let fortune = this.yearsLeft(planet);
+    if (fortune > 0) {
+      return `You have a mere ${fortune} years left to live on ${planet}. Make the most of it!`
+    }
+  }
 }
