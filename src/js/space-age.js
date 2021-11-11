@@ -18,4 +18,8 @@ export default class SpaceAge {
     let mars = (this.ages['Earth'] / 1.88).toFixed(2);
     this.ages['Mars'] = parseFloat(mars);
   }
+
+  onJupiter() {
+    this.ages['Jupiter'] = parseFloat((this.ages['Earth'] / 11.86).toFixed(2));
+  }
 }
