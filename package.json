@@ -1,7 +1,7 @@
 {
-  "name": "new-template-time",
+  "name": "galactic-age-calculator",
   "version": "1.0.0",
-  "description": "this is a description",
+  "description": "calculates your age in planetary years for non-earths",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
