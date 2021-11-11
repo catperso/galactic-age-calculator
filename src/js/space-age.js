@@ -11,4 +11,8 @@ export default class SpaceAge {
     this.ages['Mars'] = parseFloat((this.ages['Earth'] / 1.88).toFixed(2));
     this.ages['Jupiter'] = parseFloat((this.ages['Earth'] / 11.86).toFixed(2));
   }
+
+  yearsLeft(planet) {
+    return parseFloat((this.expectancy[planet] - this.ages[planet]).toFixed(2));
+  }
 }
