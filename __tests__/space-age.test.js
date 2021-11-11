@@ -32,5 +32,9 @@ describe('SpaceAge', () => {
     expect(myAge.expectancy['Venus']).toEqual(127.40);
     expect(myAge.expectancy['Mars']).toEqual(42.02);
     expect(myAge.expectancy['Jupiter']).toEqual(6.66);
-  })
+  });
+  test('should return how many years a user has left to live on earth (on average)', () => {
+    myAge.ageConverter();
+    expect(myAge.yearsLeft('Earth')).toEqual(47.99);
+  });
 });
