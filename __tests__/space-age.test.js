@@ -9,6 +9,11 @@ describe('SpaceAge', () => {
   });
 
   test('should correctly create a SpaceAge object with the users age in earth years', () => {
-    expect(myAge.earthYears).toEqual(31);
+    expect(myAge.earthAge).toEqual(31);
+  });
+
+  test('should convert earth age to mercury age (to 2 decimal places) and add it as a new property to the object', () => {
+    myAge.onMercury();
+    expect(myAge.mercuryAge).toEqual(129.17);
   });
 });
