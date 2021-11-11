@@ -23,13 +23,13 @@ export default class SpaceAge {
   foretelling(planet) {
     let fortune = this.yearsLeft(planet);
     if (fortune > 0) {
-      return `You have a mere ${fortune} years left to live on ${planet}. Make the most of it!`
+      return `You have a mere ${fortune} ${planet} years left to live. Make the most of it!`;
     }
     if (fortune < 0) {
-      return `You're currently ${-fortune} years past the average lifetime on ${planet}. Go for the high score!`
+      return `You're currently ${-fortune} ${planet} years past the average lifetime. Go for the high score!`;
     }
     if (fortune === 0) {
-      return `Most people on ${planet} are expected to die at your age. Defy expectations!`
+      return `Most people on ${planet} are expected to die at your age. Defy expectations!`;
     }
   }
 }
