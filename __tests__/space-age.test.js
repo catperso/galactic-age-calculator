@@ -51,6 +51,6 @@ describe('SpaceAge', () => {
     expect(myAge.ages['Saturn']).toEqual(1.05);
     expect(myAge.ages['Uranus']).toEqual(0.37);
     expect(myAge.ages['Neptune']).toEqual(0.19);
-    expect(myAge.ages['Pluto']).toEqual(0.13);
+    expect(myAge.ages['Pluto']).toEqual(0.12);
    });
 });
