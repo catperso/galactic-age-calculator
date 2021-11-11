@@ -47,4 +47,10 @@ describe('SpaceAge', () => {
     myAge.ageConverter();
     expect(myAge.foretelling('Mercury')).toEqual("You're currently 204.2 years past the average lifetime on Mercury. Go for the high score!");
    });
+   test('should include the rest of the planets in our solar system, and also pluto, in the age conversion', () => {
+    expect(myAge.ages['Saturn']).toEqual(1.05);
+    expect(myAge.ages['Uranus']).toEqual(0.37);
+    expect(myAge.ages['Neptune']).toEqual(0.19);
+    expect(myAge.ages['Pluto']).toEqual(0.13);
+   });
 });
