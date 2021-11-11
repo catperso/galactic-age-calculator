@@ -13,4 +13,9 @@ export default class SpaceAge {
     let venus = (this.ages['Earth'] / 0.62).toFixed(2);
     this.ages['Venus'] = parseFloat(venus);
   }
+
+  onMars() {
+    let mars = (this.ages['Earth'] / 1.88).toFixed(2);
+    this.ages['Mars'] = parseFloat(mars);
+  }
 }
