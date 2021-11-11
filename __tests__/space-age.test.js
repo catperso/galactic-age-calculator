@@ -42,4 +42,9 @@ describe('SpaceAge', () => {
    test('should return foreboding message to a user not yet at the average expectancy', () => {
     expect(myAge.foretelling('Jupiter')).toEqual('You have a mere 4.05 years left to live on Jupiter. Make the most of it!');
    });
+   test('should return inspiring message to a user older than their expectancy', () => {
+    myAge.ages['Earth'] = 128;
+    myAge.ageConverter();
+    expect(myAge.foretelling('Mercury')).toEqual("You're currently 204.20 years past the average lifetime on Mercury. Go for the high score!");
+   });
 });
