@@ -21,5 +21,9 @@ describe('SpaceAge', () => {
   test('should convert earth age to mars age (to 2 decimal places) and add it to the ages property', () => {
     myAge.onMars();
     expect(myAge.ages['Mars']).toEqual(16.49);
-  })
+  });
+  test('should convert earth age to jupiter age (to 2 decimal places) and add it to the ages property', () => {
+    myAge.onJupiter();
+    expect(myAge.ages['Jupiter']).toEqual(2.61);
+  });
 });
