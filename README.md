@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _Galactic Age Calculator_
 
 #### By _**Matt C.**_
 
-#### _{Brief description of application}_
+#### _Converts your age from Earth years to corresponding years on any other planet in our solar system, and also Pluto_
 
 ## Technologies Used
 
@@ -17,13 +17,13 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_A fun exercise in getting used to using webpack. Input your age (in Earth years) and find out how many equivalent years you'll be on other planets in our solar system. Also find out how many Plutonian years you are! In addition you can find out how much longer you have until you reach the average lifespan of humans._
 
 ## Setup/Installation Requirements
 
-* _Run 'git clone git@github:catperso/{PROJECT GOES HERE}.git' from the terminal to clone the project directory to your device._
-* _Run 'npm install' and 'npm run build' from the terminal in the project directory._
-* _Run 'npm run start' from the terminal to build the project and start a live server._
+* _Run 'git clone git@github:catperso/galactic-age-calculator.git' from the terminal to clone the project directory to your device._
+* _Run 'npm install' from the terminal in the project directory to build the necessary node packages._
+* _Run 'npm run start' from the terminal to build the project and start a live server in your browser._
 * _Enjoy the lovely CSS._
 
 ## Known Bugs
