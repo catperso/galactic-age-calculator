@@ -37,5 +37,4 @@ $("#age-input").submit((event) => {
   $("#pluto-age").text(yourAge.ages['Pluto']);
   $("#pluto-lifespan").text(yourAge.expectancy['Pluto']);
   $("#pluto-foretelling").text(yourAge.foretelling('Pluto'));
-
 });

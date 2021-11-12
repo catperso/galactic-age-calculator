@@ -1,3 +1,41 @@
 body {
+  background-color: rgba(0, 132, 248, 0.274);
+}
+
+#output {
+  display: none;
+}
+
+.year-numbers {
+  font-style: italic;
+}
+
+#header {
+  text-align: center;
+  font-family: serif;
+  font-size: larger;
+  font-style: italic;
   background-color: aliceblue;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+#header h1 {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+}
+
+form {
+  background-color: bisque;
+  padding: 10px;
+}
+
+.accordion-button {
+  font-weight: bold;
+  background-color: rgba(255, 166, 0, 0.308);
+}
+
+.accordion-body {
+  background-color: rgb(249, 205, 255);
 }
