@@ -39,18 +39,22 @@ describe('SpaceAge', () => {
     expect(myAge.yearsLeft('Mars')).toEqual(25.53);
     expect(myAge.yearsLeft('Jupiter')).toEqual(4.05);
   });
-   test('should return foreboding message to a user not yet at the average expectancy', () => {
+  test('should return foreboding message to a user not yet at the average expectancy', () => {
     expect(myAge.foretelling('Jupiter')).toEqual('You have a mere 4.05 Jupiter years left to live. Make the most of it!');
-   });
-   test('should return inspiring message to a user older than their expectancy', () => {
-    myAge.ages['Earth'] = 128;
-    myAge.ageConverter();
-    expect(myAge.foretelling('Mercury')).toEqual("You're currently 204.2 Mercury years past the average lifetime. Go for the high score!");
-   });
-   test('should include the rest of the planets in our solar system, and also pluto, in the age conversion', () => {
+  });
+  test('should return inspiring message to a user older than their expectancy', () => {
+    let oldAge = new SpaceAge(128);
+    oldAge.ageConverter();
+    expect(oldAge.foretelling('Mercury')).toEqual("You're currently 204.2 Mercury years past the average lifetime. Go for the high score!");
+  });
+  test('should include the rest of the planets in our solar system, and also pluto, in the age conversion', () => {
     expect(myAge.ages['Saturn']).toEqual(1.05);
     expect(myAge.ages['Uranus']).toEqual(0.37);
     expect(myAge.ages['Neptune']).toEqual(0.19);
     expect(myAge.ages['Pluto']).toEqual(0.12);
-   });
+  });
+  test('should return inspiring message to users exactly at the average life expectancy', () => {
+    let exactAge = new SpaceAge(78.99);
+    expect(exactAge.foretelling('Earth')).toEqual('Most people on Earth are expected to die at your age. Defy expectations!');
+  });
 });
