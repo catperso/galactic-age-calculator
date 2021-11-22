@@ -26,6 +26,10 @@ _A fun exercise in getting used to using webpack. Input your age (in Earth years
 * _Run 'npm run start' from the terminal to build the project and start a live server in your browser._
 * _Enjoy the lovely CSS._
 
+## Running Tests with Jest
+
+_To run tests with jest, simply run 'npm run test' from the command line in the project directory._
+
 ## Known Bugs
 
 * _None so far_
